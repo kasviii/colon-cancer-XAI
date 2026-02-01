@@ -11,3 +11,20 @@ in the images.
 
 The repository focuses on model architecture, training methodology,
 evaluation results, and explainable AI visualizations.
+
+## Results
+
+Both InceptionV3 and Xception models were trained using transfer learning on
+colonoscopy image data. Training and validation performance is visualized
+using accuracy and loss curves, along with confusion matrices for
+class-wise evaluation.
+
+Xception achieved higher validation accuracy and more stable convergence
+compared to InceptionV3. Confusion matrices indicate that most
+misclassifications occur between colon cancer and normal colon classes,
+which is expected due to visual similarity in endoscopic imagery.
+
+Explainable AI analysis was performed using Grad-CAM. The resulting heatmaps
+demonstrate that both models focus on clinically relevant regions such as
+lesion boundaries and abnormal tissue patterns. XAI visualizations are
+provided in the `outputs/` directory.
